@@ -1,17 +1,17 @@
 pipeline {
         agent any
         environment {
-            registry = "impankajchauhan/tomcat-sl"
-            registryCredential = 'dockerhub'
+            registry = "bramamu/sprint6dockerjenkinscloud"
+            registryCredential = 'dockerhubcredential'
             dockerImage = ''
-		PROJECT_ID = 'My First Project'
- 		CLUSTER_NAME = 'k8s-demo'
+		PROJECT_ID = 'my-first-project-279411'
+ 		CLUSTER_NAME = 'sprint6-k8-cluster-gcloud'
  		LOCATION = 'us-central1-c'
- 		CREDENTIALS_ID = 'k8s-demo'
+ 		CREDENTIALS_ID = 'sprint6-k8'
         }
 		
 	    stages {	
-		   stage('scm Checkout') {            
+		   stage('Scm Checkout') {            
 			steps {
 	                  checkout scm
 			}	
