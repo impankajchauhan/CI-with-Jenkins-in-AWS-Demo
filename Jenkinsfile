@@ -1,7 +1,7 @@
 pipeline {
         agent any
         environment {
-            registry = "impankajchauhan/tomcat-sl"
+            registry = "impankajchauhan1989/tomcat-sl"
             registryCredential = 'dockerhub'
             dockerImage = ''
 		PROJECT_ID = 'My First Project'
