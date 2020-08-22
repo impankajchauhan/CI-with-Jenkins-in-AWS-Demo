@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mytestapp
-        image: impankajchauhan1989/sprint6-tomcat-sl:latest
+        image: impankajchauhan1989/tomcat-sl:latest
         ports:
         - containerPort: 8080
 ---
